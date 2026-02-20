@@ -141,7 +141,7 @@ export function Hero() {
                 animate={{ y: 0 }}
                 transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
               >
-                Prof. h. c. Univ.-Doz. Dr.
+                Prof. h.c. Univ.-Doz. Dr.
                 <br />
                 Günther Neumayr
               </motion.h1>
@@ -208,24 +208,6 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Texte unter den Schwerpunkten – Stylisches Design mit Akzent */}
-        <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-          <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-stone-200/70 bg-gradient-to-br from-white via-white to-accent/5 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.06),0_0_0_1px_rgba(0,0,0,0.02)]">
-            <div className="relative border-l-4 border-accent pl-6 pr-6 py-8 sm:pl-8 sm:pr-8 sm:py-10">
-              <p className="text-base leading-relaxed text-stone-600 sm:text-lg sm:leading-loose">
-                <span className="font-display text-lg font-normal text-stone-600 sm:text-xl">M</span>it jahrzehntelanger Erfahrung in der Inneren Medizin und Kardiologie bieten wir Ihnen eine umfassende, persönliche und hochqualifizierte medizinische Betreuung, von der Vorsorge über die Diagnostik bis zur Therapie.
-              </p>
-              <div className="my-6 flex items-center gap-3 sm:my-8">
-                <span className="h-px flex-1 bg-gradient-to-r from-accent/30 to-transparent" aria-hidden />
-                <span className="h-1.5 w-1.5 rounded-full bg-accent/60" aria-hidden />
-                <span className="h-px flex-1 bg-gradient-to-l from-accent/30 to-transparent" aria-hidden />
-              </div>
-              <p className="text-base leading-relaxed text-stone-600 sm:text-lg sm:leading-loose">
-                Unsere modern ausgestattete Praxis verbindet neueste Diagnostik und Therapie mit individueller Zuwendung. Im Mittelpunkt stehen Sie als Mensch – mit all Ihren Anliegen, Fragen und Bedürfnissen.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

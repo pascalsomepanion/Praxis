@@ -2,18 +2,6 @@ import { Heart, Activity, Stethoscope, ChevronRight } from "lucide-react";
 
 const fachgebiete = [
   {
-    icon: Heart,
-    title: "Kardiologie",
-    items: [
-      "EKG (Ruhe- und Belastungs-EKG)",
-      "Echokardiographie (Herzultraschall)",
-      "Langzeit-EKG",
-      "Langzeit-Blutdruckmessung",
-      "Spiroergometrie (ergometrische Leistungsdiagnostik mit Atemgasanalyse)",
-      "Stressechokardiographie",
-    ],
-  },
-  {
     icon: Stethoscope,
     title: "Innere Medizin",
     items: [
@@ -23,6 +11,18 @@ const fachgebiete = [
       "Laboruntersuchungen (Blut, Urin)",
       "Vorsorgeuntersuchungen",
       "Internistische Basisdiagnostik",
+    ],
+  },
+  {
+    icon: Heart,
+    title: "Kardiologie",
+    items: [
+      "EKG (Ruhe- und Belastungs-EKG)",
+      "Echokardiographie (Herzultraschall)",
+      "Langzeit-EKG",
+      "Langzeit-Blutdruckmessung",
+      "Spiroergometrie (ergometrische Leistungsdiagnostik mit Atemgasanalyse)",
+      "Stressechokardiographie",
     ],
   },
   {
@@ -49,7 +49,7 @@ export function Leistungen() {
             Unser Spektrum
           </h2>
           <p className="mt-4 text-lg text-stone-600">
-            Präzise Diagnostik und individuelle Therapiekonzepte auf dem neuesten Stand der Medizin. Wir bieten Ihnen eine umfassende Betreuung in folgenden Fachbereichen:
+            Mit jahrzehntelanger Erfahrung und modernster Technik bieten wir Ihnen eine umfassende, persönliche und hochqualifizierte medizinische Betreuung, von der Vorsorge über die Diagnostik bis zur Therapie in folgenden Bereichen:
           </p>
         </div>
 
