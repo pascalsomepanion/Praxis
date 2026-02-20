@@ -4,6 +4,8 @@
 
 html {
   scroll-behavior: smooth;
+  /* Abstand beim Anspringen von Ankern = Header-Höhe (4rem), damit Abschnitt direkt unter dem Header endet */
+  scroll-padding-top: 4rem;
 }
 
 body {
@@ -13,6 +15,10 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  /* Beim Klick auf „Info“ so weit scrollen, dass der Hero inkl. Scroll-Hinweis aus dem Viewport ist */
+  .scroll-mt-past-hero {
+    scroll-margin-top: -4rem;
   }
 }
 

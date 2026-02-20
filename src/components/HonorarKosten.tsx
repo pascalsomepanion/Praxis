@@ -1,9 +1,9 @@
-import { Info, FileText } from "lucide-react";
+import { Info } from "lucide-react";
 
 export function HonorarKosten() {
   return (
-    <section id="honorar" className="scroll-mt-20 bg-transparent py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section id="honorar" className="scroll-mt-past-hero bg-transparent py-6 sm:py-8">
+      <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6 sm:pt-10 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
             Transparenz
@@ -11,7 +11,7 @@ export function HonorarKosten() {
           <h2 className="mt-3 font-display text-display-lg font-semibold text-ink">
             Honorar & Kosten
           </h2>
-          <p className="mt-4 text-lg text-ink-muted">
+          <p className="mt-4 text-lg text-stone-600">
             Transparente Information zu Ihren Behandlungskosten.
           </p>
         </div>
@@ -21,24 +21,32 @@ export function HonorarKosten() {
             <div className="absolute right-0 top-0 h-32 w-32 bg-accent/5 rounded-bl-full" aria-hidden />
             <div className="relative flex gap-5 sm:gap-6">
               <div className="shrink-0">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-white shadow-soft">
-                  <Info className="h-7 w-7" strokeWidth={1.75} />
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-white shadow-soft text-2xl font-semibold">
+                  €
                 </div>
               </div>
               <div className="min-w-0">
                 <h3 className="text-xl font-semibold text-ink">
                   Wahlarzt-Ordination
                 </h3>
-                <p className="mt-4 leading-relaxed text-ink-muted">
-                  Unsere Ordination arbeitet als <strong className="text-ink">Wahlarzt-Ordination</strong>. 
-                  Die Kosten für die Untersuchungen und Behandlungen sind von Ihnen als Patientin bzw. Patient zu tragen. 
-                  Sie erhalten von uns eine detaillierte Honorarnote, die Sie bei Ihrer Krankenkasse zur Teilrückerstattung einreichen können. 
-                  Die genauen Erstattungssätze erfahren Sie bei Ihrer jeweiligen Kasse.
+                <p className="mt-4 leading-relaxed text-stone-600">
+                  Wir führen unsere Praxis als Wahlarzt-Ordination. Das ermöglicht uns, genau das Kostbarste in Ihre Behandlung zu investieren: ausreichend Zeit.
                 </p>
-                <p className="mt-5 flex items-center gap-3 rounded-xl bg-white/80 px-4 py-3 text-sm text-ink-muted">
-                  <FileText className="h-5 w-5 shrink-0 text-accent" strokeWidth={1.5} />
-                  Gerne informieren wir Sie vor der ersten Untersuchung über die voraussichtlichen Kosten.
+                <p className="mt-4 leading-relaxed text-stone-600">
+                  In einer entspannten Atmosphäre ohne Zeitdruck widmen wir uns intensiv Ihrer Diagnose und Therapie. Die Verrechnung erfolgt direkt mit Ihnen als Patient. Im Anschluss erhalten Sie von uns eine detaillierte Honorarnote, die Sie unkompliziert bei Ihrem Sozialversicherungsträger zur (Teil-)Rückerstattung einreichen können.
                 </p>
+                <div className="mt-5 flex gap-3 rounded-xl bg-white/80 px-4 py-4 text-sm text-stone-600">
+                  <Info className="h-5 w-5 shrink-0 text-accent mt-0.5" strokeWidth={1.5} />
+                  <div className="min-w-0 space-y-2">
+                    <p className="font-medium text-ink">Transparenz ist uns wichtig:</p>
+                    <p className="leading-relaxed">
+                      Da die Kosten je nach individuellem Untersuchungsumfang variieren, beraten wir Sie gerne vorab persönlich über die voraussichtlichen Honorare.
+                    </p>
+                    <p className="leading-relaxed">
+                      Wir unterstützen Sie zudem gerne bei Fragen zur Einreichung bei Ihrer Krankenkasse oder Zusatzversicherung.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

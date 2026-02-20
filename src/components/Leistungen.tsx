@@ -39,17 +39,17 @@ const fachgebiete = [
 
 export function Leistungen() {
   return (
-    <section id="leistungen" className="scroll-mt-20 bg-transparent py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section id="leistungen" className="scroll-mt-past-hero bg-transparent py-6 sm:py-8">
+      <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6 sm:pt-10 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
-            Leistungsspektrum
+            Leistungen
           </p>
           <h2 className="mt-3 font-display text-display-lg font-semibold text-ink">
-            Leistungen & Untersuchungen
+            Unser Spektrum
           </h2>
-          <p className="mt-4 text-lg text-ink-muted">
-            Unser Leistungsspektrum umfasst die Fachgebiete Innere Medizin, Kardiologie und Sportmedizin mit moderner Diagnostik.
+          <p className="mt-4 text-lg text-stone-600">
+            Präzise Diagnostik und individuelle Therapiekonzepte auf dem neuesten Stand der Medizin. Wir bieten Ihnen eine umfassende Betreuung in folgenden Fachbereichen:
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export function Leistungen() {
                     {fach.items.map((item) => (
                       <li
                         key={item}
-                        className="flex items-start gap-3 text-sm text-ink-muted"
+                        className="flex items-start gap-3 text-sm text-stone-600"
                       >
                         <ChevronRight className="mt-0.5 h-4 w-4 shrink-0 text-accent/70" strokeWidth={2} />
                         <span>{item}</span>

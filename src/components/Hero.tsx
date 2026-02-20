@@ -9,28 +9,47 @@ import {
   Stethoscope,
   ShieldCheck,
 } from "lucide-react";
-import { HeroCarousel } from "./HeroCarousel";
 
 const schwerpunkte = [
   {
     icon: Stethoscope,
     title: "Innere Medizin",
-    text: "Ganzheitliche internistische Diagnostik und Therapie.",
+    items: [
+      "Umfassende Abklärung internistischer Beschwerdebilder",
+      "Ursachenforschung statt reiner Symptombekämpfung",
+      "Individuelle Behandlungspläne für langfristige Gesundheit",
+      "Spezialisierte Betreuung bei komplexen Organerkrankungen",
+    ],
   },
   {
     icon: Heart,
     title: "Kardiologie",
-    text: "Herzdiagnostik, EKG, Ultraschall und Belastungsuntersuchungen.",
+    items: [
+      "Modernste Herz-Kreislauf-Diagnostik (High-End Canon Ultraschall)",
+      "Früherkennung von Herzrhythmusstörungen und Durchblutungsstörungen",
+      "Individuelle Risikoanalyse für Schlaganfall und Herzinfarkt",
+      "Langzeit-Überwachung und Blutdruck-Management",
+    ],
   },
   {
     icon: Activity,
     title: "Sportmedizin",
-    text: "Leistungsdiagnostik, sportkardiologische Beratung.",
+    items: [
+      "Punktgenaue Analyse der körperlichen Leistungsfähigkeit",
+      "Wissenschaftlich fundierte Trainingsberatung für alle Level",
+      "Sportkardiologische Freigabe für Wettkampf und Freizeit",
+      "Prävention von Überlastungsschäden und Sportverletzungen",
+    ],
   },
   {
     icon: ShieldCheck,
     title: "Vorsorge",
-    text: "Check-ups und individuelle Präventionsberatung.",
+    items: [
+      "Maßgeschneiderte Check-ups für jedes Lebensalter",
+      "Frühzeitiges Erkennen von versteckten Gesundheitsrisiken",
+      "Beratung zu Lebensstil, Ernährung und Vitalität",
+      "Ausführliche Befundbesprechung ohne Zeitdruck",
+    ],
   },
 ];
 
@@ -143,48 +162,70 @@ export function Hero() {
         <ScrollIndicator />
       </div>
 
-      {/* Abschnitt unter dem Titelbild (Ziel für Menü „Info“ und Scroll-Hinweis) */}
-      <div id="info" className="relative z-10 scroll-mt-20 bg-white/92 min-h-full">
-        {/* Eigenständiger Abschnitt: Karussell (Titelbild) */}
-        <div className="mx-auto max-w-6xl px-4 pt-8 pb-6 sm:px-6 lg:px-8">
-          <HeroCarousel />
-        </div>
-
-        {/* Texte unter dem Titelbild */}
-        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-base leading-relaxed text-ink-muted sm:text-lg">
-            Mit jahrzehntelanger Erfahrung in der Inneren Medizin und Kardiologie bieten wir Ihnen eine umfassende, persönliche und hochqualifizierte medizinische Betreuung, von der Vorsorge über die Diagnostik bis zur Therapie.
-          </p>
-          <p className="mt-4 text-base leading-relaxed text-ink-muted sm:text-lg">
-            Unsere modern ausgestattete Praxis verbindet neueste Diagnostik und Therapie mit individueller Zuwendung. Im Mittelpunkt stehen Sie als Mensch – mit all Ihren Anliegen, Fragen und Bedürfnissen.
-          </p>
-        </div>
-      </div>
-
-      {/* Eigenständiger Abschnitt: Schwerpunkte */}
-      <div className="mx-auto max-w-6xl px-4 pt-12 pb-20 sm:px-6 sm:pb-28 lg:px-8 lg:pb-36">
-        <div className="mx-auto grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-4 animate-stagger">
-          {schwerpunkte.map((item) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={item.title}
-                className="group relative rounded-2xl border border-stone-200/80 bg-white p-6 shadow-soft transition hover:border-accent/20 hover:shadow-card"
-              >
-                <div className="absolute left-0 top-6 h-10 w-1 rounded-r-full bg-accent opacity-0 transition group-hover:opacity-100" aria-hidden />
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:bg-accent group-hover:text-white">
-                  <Icon className="h-6 w-6" strokeWidth={1.75} />
+      {/* Abschnitt unter dem Titelbild (Ziel für Menü „Info“) – Abstand zum Header wie bei Leistungen/Team */}
+      <div id="info" className="relative z-10 scroll-mt-past-hero bg-white/92 min-h-full pt-2 sm:pt-4">
+        <div className="mx-auto max-w-6xl px-4 pt-16 pb-10 sm:px-6 sm:pt-20 sm:pb-12 lg:px-8">
+          {/* Braune Überschrift wie bei den anderen Abschnitten */}
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">
+              Allgemeine Informationen
+            </p>
+            <h2 className="mt-3 font-display text-display-lg font-semibold text-ink">
+              Ihre Gesundheit im Mittelpunkt
+            </h2>
+            <p className="mt-4 text-lg text-stone-600 max-w-2xl mx-auto">
+              Ihre Gesundheit verdient Zeit und Präzision. Wir begleiten Sie ganzheitlich mit fachlicher Expertise.
+            </p>
+          </div>
+          {/* Schwerpunkte mit Icons und Karten-Darstellung */}
+          <div className="mx-auto mt-12 grid max-w-5xl gap-5 sm:grid-cols-2 lg:grid-cols-4 animate-stagger">
+            {schwerpunkte.map((item) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={item.title}
+                  className="group relative rounded-2xl border border-stone-200/80 bg-white p-6 shadow-soft transition hover:border-accent/20 hover:shadow-card"
+                >
+                  <div className="absolute left-0 top-6 h-10 w-1 rounded-r-full bg-accent opacity-0 transition group-hover:opacity-100" aria-hidden />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition group-hover:bg-accent group-hover:text-white">
+                    <Icon className="h-6 w-6" strokeWidth={1.75} />
+                  </div>
+                  <h3 className="mt-4 font-semibold text-ink">{item.title}</h3>
+                  <ul className="mt-3 space-y-2" role="list">
+                    {item.items.map((point) => (
+                      <li
+                        key={point}
+                        className="flex gap-2 text-sm leading-snug text-stone-600"
+                      >
+                        <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" aria-hidden />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <h3 className="mt-4 font-semibold text-ink">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-                  {item.text}
-                </p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
+
+        {/* Texte unter den Schwerpunkten – Stylisches Design mit Akzent */}
+        <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+          <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-stone-200/70 bg-gradient-to-br from-white via-white to-accent/5 shadow-[0_4px_24px_-4px_rgba(0,0,0,0.06),0_0_0_1px_rgba(0,0,0,0.02)]">
+            <div className="relative border-l-4 border-accent pl-6 pr-6 py-8 sm:pl-8 sm:pr-8 sm:py-10">
+              <p className="text-base leading-relaxed text-stone-600 sm:text-lg sm:leading-loose">
+                <span className="font-display text-lg font-normal text-stone-600 sm:text-xl">M</span>it jahrzehntelanger Erfahrung in der Inneren Medizin und Kardiologie bieten wir Ihnen eine umfassende, persönliche und hochqualifizierte medizinische Betreuung, von der Vorsorge über die Diagnostik bis zur Therapie.
+              </p>
+              <div className="my-6 flex items-center gap-3 sm:my-8">
+                <span className="h-px flex-1 bg-gradient-to-r from-accent/30 to-transparent" aria-hidden />
+                <span className="h-1.5 w-1.5 rounded-full bg-accent/60" aria-hidden />
+                <span className="h-px flex-1 bg-gradient-to-l from-accent/30 to-transparent" aria-hidden />
+              </div>
+              <p className="text-base leading-relaxed text-stone-600 sm:text-lg sm:leading-loose">
+                Unsere modern ausgestattete Praxis verbindet neueste Diagnostik und Therapie mit individueller Zuwendung. Im Mittelpunkt stehen Sie als Mensch – mit all Ihren Anliegen, Fragen und Bedürfnissen.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

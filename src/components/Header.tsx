@@ -3,7 +3,8 @@ import Link from "next/link";
 const nav = [
   { href: "#info", label: "Info" },
   { href: "#leistungen", label: "Leistungen" },
-  { href: "#team", label: "Team" },
+  { href: "#honorar", label: "Kosten" },
+  { href: "#team", label: "Über uns" },
   { href: "#kontakt", label: "Kontakt" },
 ];
 
