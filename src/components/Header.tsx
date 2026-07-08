@@ -29,12 +29,15 @@ export function Header() {
         scrolled || menuOpen ? "bg-white shadow-soft" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-6 px-5 sm:px-8 lg:px-10">
+      <div className="flex h-16 w-full items-center justify-between gap-6 px-5 sm:px-8 lg:px-10">
         <Link
           href="/"
           className="flex items-center gap-3 transition opacity-90 hover:opacity-100"
           onClick={() => setMenuOpen(false)}
         >
+          <span className="text-sm font-medium tracking-wide text-stone-700 text-shadow-soft sm:hidden">
+            Ordination Neumayr
+          </span>
           <span className="hidden text-base font-medium tracking-wide text-stone-700 text-shadow-soft sm:inline">
             <span className="text-accent">I</span>nnere Medizin <span className="text-stone-500 font-light">|</span>{" "}
             <span className="text-accent">K</span>ardiologie <span className="text-stone-500 font-light">|</span>{" "}
