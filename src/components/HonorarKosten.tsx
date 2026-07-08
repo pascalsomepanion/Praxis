@@ -35,10 +35,12 @@ export function HonorarKosten() {
                 <p className="mt-4 leading-relaxed text-stone-600">
                   In einer entspannten Atmosphäre ohne Zeitdruck widmen wir uns intensiv Ihrer Diagnose und Therapie. Die Verrechnung erfolgt direkt mit Ihnen als Patient. Im Anschluss erhalten Sie von uns eine detaillierte Honorarnote, die Sie unkompliziert bei Ihrem Sozialversicherungsträger zur (Teil-)Rückerstattung einreichen können.
                 </p>
-                <div className="mt-5 flex gap-3 rounded-xl bg-white/80 px-4 py-4 text-sm text-stone-600">
-                  <Info className="h-5 w-5 shrink-0 text-accent mt-0.5" strokeWidth={1.5} />
-                  <div className="min-w-0 space-y-2">
-                    <p className="font-medium text-ink">Transparenz ist uns wichtig:</p>
+                <div className="mt-8 flex flex-col gap-3 rounded-xl border border-accent/15 bg-white/90 p-5 text-sm text-stone-600 sm:flex-row sm:gap-4 sm:p-6">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent">
+                    <Info className="h-4 w-4" strokeWidth={1.75} />
+                  </div>
+                  <div className="min-w-0 space-y-2.5">
+                    <p className="font-semibold text-ink">Transparenz ist uns wichtig</p>
                     <p className="leading-relaxed">
                       Da die Kosten je nach individuellem Untersuchungsumfang variieren, beraten wir Sie gerne vorab persönlich über die voraussichtlichen Honorare.
                     </p>
