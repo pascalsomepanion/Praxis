@@ -92,16 +92,16 @@ function ScrollIndicator() {
 
 export function Hero() {
   return (
-    <section className="bg-surface-elevated">
-      {/* Hintergrund: komplett weiß, erst unter dem Header */}
+    <section className="relative bg-surface-elevated">
+      {/* Hintergrund: komplett weiß, erst unter dem Header. Auf die Hero-Sektion begrenzt (absolute statt fixed), damit es beim Weiterscrollen in andere Sektionen nicht durchscheint */}
       <div
-        className="fixed inset-0 top-16 z-0 bg-white"
+        className="absolute inset-0 top-16 z-0 bg-white"
         aria-hidden
       />
 
       {/* Titelbild: nur das Herz, rechts; erst unter dem Header */}
       <div
-        className="fixed inset-0 top-16 z-0 flex items-center justify-end overflow-hidden pr-0"
+        className="absolute inset-0 top-16 z-0 flex items-center justify-end overflow-hidden pr-0"
         aria-hidden
       >
         <div className="relative h-full w-full max-w-[55vw] min-w-[280px] lg:max-w-[50vw]">
