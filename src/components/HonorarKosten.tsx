@@ -16,7 +16,7 @@ export function HonorarKosten() {
           </p>
         </div>
 
-        <div className="mx-auto mt-14 max-w-3xl">
+        <div className="mx-auto mt-14 max-w-5xl">
           <div className="relative overflow-hidden rounded-2xl border border-stone-200/80 bg-gradient-to-br from-accent-light/50 to-white p-8 shadow-soft sm:p-10">
             <div className="absolute right-0 top-0 h-32 w-32 bg-accent/5 rounded-bl-full" aria-hidden />
             <div className="relative flex gap-5 sm:gap-6">
