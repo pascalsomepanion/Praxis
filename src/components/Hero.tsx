@@ -73,7 +73,7 @@ function ScrollIndicator() {
         animate={{ opacity: [0.4, 1, 0.4] }}
         transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
       >
-        Scroll
+        Mehr Entdecken
       </motion.span>
       <motion.div
         className="h-10 w-px bg-ink-muted/60"
